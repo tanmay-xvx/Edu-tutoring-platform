@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='index2.css') }}">
-    <title>Document</title>
+    <title>EduTutor</title>
  
 </head>
 <body>
     <div class="rectangle">
-        <form action="/action_page.php">
+        <form method="post">
             <p style="text-align:center;"><b style="font-size:2.5rem">Information Form</b><br><br></p>
             <div class="container">
               
@@ -19,12 +19,13 @@
               <br><br>
             
           </form>
-        <form action="/action_page.php">
+        <form method="post">
             <p><b>Would you like to take the assessment or manually fill the form?</b></p>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Manually fill the form</label><br>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Take the assessment</label><br>
+            <button type="submit">Sumbit</button>
     </div>
 </div>
  

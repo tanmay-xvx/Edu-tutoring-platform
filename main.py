@@ -1,13 +1,16 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,redirect,request, url_for
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/',methods=['GET', 'POST'])
 def index1():
+    if request.method == 'POST':
+        return redirect(url_for('index2'))
     return render_template('index1.html')
-
-@app.route('/info')
+@app.route('/info',methods=['GET', 'POST'])
 def index2():
+    if request.method == 'POST':
+        return redirect(url_for('index3'))
     return render_template('index2.html')
 
 @app.route('/assesment')
