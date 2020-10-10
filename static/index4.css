@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+    height:100vh;
+    background:#1496E9;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.checked {
+    color: orange;
+  }
+.container{
+    background:whitesmoke;
+    margin:0 0 0 25px;
+    top:-10px;
+    border-radius:12px;
+    padding:5px;
+    height:95vh;
+}
+.subjects-display{
+    display:flex;
+    flex-direction: row;
+    padding:15px;
+    margin:5px;
+}
+.subjects-display div{
+    background-color: whitesmoke;
+    border: 1px solid #1496E9;
+    padding:5px;
+    margin:10px;
+    border-radius:5px;
+    width:120px;
+    text-align:center;
+    cursor:pointer;
+}
+.subjects-display div:hover{
+    background-color:#43a5e2;
+    color:whitesmoke;
+}
+.teachers-display{
+    display:flex;
+    flex-direction:row;
+}
+.teacher{
+    margin:15px;
+    background:whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 15px 15px 5px rgba(0,0,0,0.2);
+}
+.teachers-display h3{
+    padding:8px;
+}
+img{
+    flex:1;
+    height:200px;
+    width:200px;
+    border-radius: 8px 8px 0 0;
+    display:block;
+}
+.fa{
+    font-size:12px;
+}

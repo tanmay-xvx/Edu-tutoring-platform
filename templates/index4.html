@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index4.css') }}">
+    <title>EduTutor</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>This is a personalised list of teachers curated according to your self assessment:</h2>
+        <div class="subjects-display">
+            <div>Math</div>
+            <div>Science</div>
+            <div>English</div>
+        </div>
+        <div class="teachers-display">
+            <div class="teacher">
+                <img src="{{ url_for('static', filename='img/teacher1 (1).jpg') }}"></img>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h3>Teacher1</h3>
+            </div>
+            <div class="teacher">
+                <img src="{{ url_for('static', filename='img/teacher1 (2).jpg') }}"></img>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h3>Teacher2</h3>
+            </div>
+            <div class="teacher">
+                <img src="{{ url_for('static', filename='img/teacher1 (3).jpg') }}"></img>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h3>Teacher3</h3>
+            </div>
+            <div class="teacher">
+                <img src="{{ url_for('static', filename='img/teacher1 (4).jpg') }}"></img>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h3>Teacher4</h3>
+            </div>
+            <div class="teacher">
+                <img src="{{ url_for('static', filename='img/teacher1 (5).jpg') }}"></img>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h3>Teacher5</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
