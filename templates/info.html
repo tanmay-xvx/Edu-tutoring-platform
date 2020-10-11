@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index2.css') }}">
+    <title>EduTutor</title>
+ 
+</head>
+<body>
+    <div class="rectangle">
+        <form action="{{ url_for('submit_info') }}" method="post">
+            <p style="text-align:center;"><b style="font-size:2.5rem">Information Form</b><br><br></p>
+            <div class="container">
+              
+              <input type="text" placeholder="Name" name="name" required>
+              <input type="number" placeholder="Class" name="class" required>
+              <input type="state" placeholder="State" name="state" required>
+              <br><br>
+        
+            <p><b>Would you like to take the assessment or manually fill the form?</b></p>
+            <input type="radio" name="take-asmnt" value="no">
+            <label for="no">Manually fill the form</label><br>
+            <input type="radio" name="take-asmnt" value="yes">
+            <label for="yes">Take the assessment</label><br>
+            <button type="submit">Sumbit</button>
+        </form>
+    </div>
+</div>
+ 
+</body>
+</html>
