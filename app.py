@@ -4,14 +4,14 @@ from flask_sqlalchemy import SQLAlchemy
 import pickle
 app = Flask(__name__,static_folder='static')
 
-ENV = 'dev'
-if ENV == 'dev':
-    app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:12345@localhost/edu_tutoring_platform'
+# ENV = 'dev'
+# if ENV == 'dev':
+#     app.debug = True
+#     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:12345@localhost/edu_tutoring_platform'
 
-else:
-    app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = ''
+# else:
+#     app.debug = False
+#     app.config['SQLALCHEMY_DATABASE_URI'] = ''
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
